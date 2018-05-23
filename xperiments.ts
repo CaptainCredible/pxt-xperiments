@@ -16,7 +16,7 @@ declare const enum xperimentTypes {
  * xperiment blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace xperimentMechanics {
+namespace xperiment {
     /**
      * Registers code to run when the device notifies about a particular event.
      * @param event event description
