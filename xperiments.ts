@@ -1,30 +1,30 @@
 
 /**
- * poopMechanics
+ * xperimentMechanics
  */
 
-declare const enum poopTypes {
+declare const enum xperimentTypes {
     //% block="long and thin"
     longThin = 1,
     //% block="big and fat"
     bigFat = 2,
-    //% block="sloppy mess"
-    sloppyMess = 1,
+    //% block="other"
+    other = 3,
 }
 
 /**
- * Poop blocks
+ * xperiment blocks
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace poopMechanics {
+namespace xperimentMechanics {
     /**
      * Registers code to run when the device notifies about a particular event.
      * @param event event description
      * @param body code handler when event is triggered
      */
 
-    //%blockId = devices_gamepad_event //% block="on poop|%event" icon="\uf152"
-    export function onPoop(event: poopTypes, body: Action) {
+    //%blockId = devices_gamepad_event //% block="on xperiment|%event" icon="\uf152"
+    export function onxperiment(event: xperimentTypes, body: Action) {
         control.onEvent(1337, event, body);
     }
 
@@ -33,7 +33,7 @@ namespace poopMechanics {
  */
 
     //% blockId=devices_device_info_event block="on plas|%event" icon="\uf152"
-    export function whenPoopSplashes(spanky: Action): void {
+    export function whenxperimentSplashes(spanky: Action): void {
         control.onEvent(1338, 1, spanky);
     }
 
@@ -46,7 +46,7 @@ namespace poopMechanics {
      * @param e describe parameter here
      */
     //% block
-    export function makePoop(ofType: poopTypes): void {
+    export function makexperiment(ofType: xperimentTypes): void {
         control.raiseEvent(1337, ofType)
     }
 
