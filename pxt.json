@@ -1,12 +1,12 @@
 {
-    "name": "eventMechanics",
+    "name": "xperiments",
     "version": "0.0.2",
     "dependencies": {
         "core": "*"
     },
-    "description": "Blocks to control the pooping",
+    "description": "Blocks to control the things",
     "files": [
-        "events.ts",
+        "xperiments.ts",
         "README.md"
     ],
     "public": true
